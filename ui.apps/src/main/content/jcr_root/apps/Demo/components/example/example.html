@@ -1,0 +1,16 @@
+<h1>example</h1>
+<div data-sly-use.obj="com.adobe.aem.guides.demo.core.models.Exparent">
+  <p>name:${obj.fullname}</p>
+  <p>date:${obj.date}</p>
+ 
+
+
+  <div data-sly-list.one="${obj.see}">
+    <p>skills:${one.skills}</p>
+    <p>salary:${one.salary}</p>
+
+  </div>
+
+</div>
+
+  

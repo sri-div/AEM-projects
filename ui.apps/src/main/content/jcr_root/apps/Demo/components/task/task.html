@@ -1,0 +1,28 @@
+<h1>task</h1>
+<div data-sly-use.obj="com.adobe.aem.guides.demo.core.models.Task">   
+<p>firstname: ${obj.firstname}</p>
+<p>lastname: ${obj.lastname}</p>
+<p>gender: ${obj.gender}</p>
+<p>region: ${obj.region}</p>
+<p>text: ${obj.text}</p>
+
+<div data-sly-list.mee="${obj.family}">
+    <p>mothername: ${mee.mothername}</p>
+    <p>fathername:${mee.fathername}</p>
+
+<div data-sly-list.youu="${obj.details}">
+    <p>dob:${youu.Dob}</p>
+    <p>check:${youu.checkbox}</p>
+
+<div data-sly.list.themm="${youu.nested}">
+    <p>skills:${themm.skills}</p>
+    <p>salary:${themm.salary}</p>
+
+
+</div>
+
+
+</div> 
+</div>
+
+</div>

@@ -1,0 +1,21 @@
+<div data-sly-use.obj="com.adobe.aem.guides.demo.core.models.Sidebar1parent">
+  <p>logopath :${obj.logopath}</p>
+  <p>logoimg :${obj.logoimage}</p>
+  <p>region :${obj:select}</p>
+
+<div data-sly-list.you="${obj.head}">
+  <p>fathername :${you.fathername}</p>
+  <p>image :${you.image}</p>
+
+  <div data-sly-list.frnd="${obj.sidebar}">
+    <p>desktop :${frnd.desktop}</p>
+
+    <div data-sly-list.mee="${frnd.url}">
+      <p>url :${mee.navigationurl}</p>
+
+    </div>
+  </div>
+</div>
+
+</div>
+

@@ -1,0 +1,13 @@
+<div data-sly-use.obj="com.adobe.aem.guides.demo.core.models.Carouseparent">
+
+<div data-sly-list.object="${obj.multi}">
+  <p>name :${object.fullname}</p>
+  <p>checkbox :${object.checkbox}</p>
+
+  <div data-sly-list.purple="${object.nestedmulti}">
+    <p>skills :${purple.skills}</p>
+    <p>salary :${purple.salary}</p>
+
+  </div>
+</div>
+</div>

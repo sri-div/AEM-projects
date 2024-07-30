@@ -1,0 +1,14 @@
+<h1>header1 component</h1>
+<div data-sly-use.obj="com.adobe.aem.guides.demo.core.models.Header1parent">
+    <p>pathfield :${obj.pathfield}</p>
+    <p>text:${obj.textfield}</p>
+
+    <div data-sly-list.mee="${obj.multifield}">
+        <p>text:${mee.text}</p>
+        <p>dob:${mee.datepicker}</p>
+        <p>checkbox:${mee.checkbox}</p>
+
+    </div>
+
+</div>
+
